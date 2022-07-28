@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3972C3D3D38E8B4090672EC3 /* Pods_PelisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEEDC97654918C5576DB27 /* Pods_PelisApp.framework */; };
+		961A51EB2881347400B3CE16 /* ManagerConections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51EA2881347400B3CE16 /* ManagerConections.swift */; };
+		961A51ED288135AF00B3CE16 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51EC288135AF00B3CE16 /* Movies.swift */; };
+		961A51F02881592600B3CE16 /* movieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51EE2881592600B3CE16 /* movieCell.swift */; };
+		961A51F12881592600B3CE16 /* movieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961A51EF2881592600B3CE16 /* movieCell.xib */; };
+		961A51F42881620400B3CE16 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51F32881620400B3CE16 /* Extension.swift */; };
+		961A51F72884F36200B3CE16 /* DitailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51F52884F36200B3CE16 /* DitailViewController.swift */; };
+		961A51F82884F36200B3CE16 /* DitailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961A51F62884F36200B3CE16 /* DitailViewController.xib */; };
+		961A51FC2884FBF600B3CE16 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51FB2884FBF600B3CE16 /* DetailViewModel.swift */; };
+		961A51FF2884FE2E00B3CE16 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A51FE2884FE2E00B3CE16 /* DetailRouter.swift */; };
+		961A52032884FFC100B3CE16 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A52022884FFC100B3CE16 /* MovieDetail.swift */; };
+		964888B4287FDB0F00597211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964888B3287FDB0F00597211 /* AppDelegate.swift */; };
+		964888B6287FDB0F00597211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964888B5287FDB0F00597211 /* SceneDelegate.swift */; };
+		964888BD287FDB1200597211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964888BC287FDB1200597211 /* Assets.xcassets */; };
+		964888C0287FDB1200597211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964888BE287FDB1200597211 /* LaunchScreen.storyboard */; };
+		964888CB287FDD6000597211 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964888C9287FDD6000597211 /* HomeViewController.swift */; };
+		964888CC287FDD6000597211 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964888CA287FDD6000597211 /* HomeViewController.xib */; };
+		964888D0287FDE3300597211 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964888CF287FDE3300597211 /* HomeRouter.swift */; };
+		964888D4287FE21A00597211 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964888D3287FE21A00597211 /* HomeViewModel.swift */; };
+		964888D72881277D00597211 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964888D62881277D00597211 /* Constans.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		961A51EA2881347400B3CE16 /* ManagerConections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConections.swift; sourceTree = "<group>"; };
+		961A51EC288135AF00B3CE16 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		961A51EE2881592600B3CE16 /* movieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieCell.swift; sourceTree = "<group>"; };
+		961A51EF2881592600B3CE16 /* movieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = movieCell.xib; sourceTree = "<group>"; };
+		961A51F32881620400B3CE16 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		961A51F52884F36200B3CE16 /* DitailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DitailViewController.swift; sourceTree = "<group>"; };
+		961A51F62884F36200B3CE16 /* DitailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DitailViewController.xib; sourceTree = "<group>"; };
+		961A51FB2884FBF600B3CE16 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		961A51FE2884FE2E00B3CE16 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		961A52022884FFC100B3CE16 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		964888B0287FDB0F00597211 /* PelisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PelisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		964888B3287FDB0F00597211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		964888B5287FDB0F00597211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		964888BC287FDB1200597211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		964888BF287FDB1200597211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		964888C1287FDB1200597211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964888C9287FDD6000597211 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		964888CA287FDD6000597211 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		964888CF287FDE3300597211 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		964888D3287FE21A00597211 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		964888D62881277D00597211 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		9CDEEDC97654918C5576DB27 /* Pods_PelisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PelisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DEDB29AB55EA7176FF0E48 /* Pods-PelisApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PelisApp.debug.xcconfig"; path = "Target Support Files/Pods-PelisApp/Pods-PelisApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D020A6B05927D0556747CF5F /* Pods-PelisApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PelisApp.release.xcconfig"; path = "Target Support Files/Pods-PelisApp/Pods-PelisApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		964888AD287FDB0F00597211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3972C3D3D38E8B4090672EC3 /* Pods_PelisApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041512D217F1C91FC1B41A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEEDC97654918C5576DB27 /* Pods_PelisApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E17CDCF749A1205AC2C1D4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEDB29AB55EA7176FF0E48 /* Pods-PelisApp.debug.xcconfig */,
+				D020A6B05927D0556747CF5F /* Pods-PelisApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		961A51E92881344300B3CE16 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				961A51EA2881347400B3CE16 /* ManagerConections.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		961A51F2288161D200B3CE16 /* Extenciones */ = {
+			isa = PBXGroup;
+			children = (
+				961A51F32881620400B3CE16 /* Extension.swift */,
+			);
+			path = Extenciones;
+			sourceTree = "<group>";
+		};
+		961A51F92884FBAC00B3CE16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				961A51F52884F36200B3CE16 /* DitailViewController.swift */,
+				961A51F62884F36200B3CE16 /* DitailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		961A51FA2884FBD900B3CE16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				961A51FB2884FBF600B3CE16 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		961A51FD2884FDF300B3CE16 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				961A51FE2884FE2E00B3CE16 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		961A52002884FFA800B3CE16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				961A52022884FFC100B3CE16 /* MovieDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		964888A7287FDB0F00597211 = {
+			isa = PBXGroup;
+			children = (
+				964888B2287FDB0F00597211 /* PelisApp */,
+				964888B1287FDB0F00597211 /* Products */,
+				4E17CDCF749A1205AC2C1D4A /* Pods */,
+				041512D217F1C91FC1B41A10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		964888B1287FDB0F00597211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				964888B0287FDB0F00597211 /* PelisApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		964888B2287FDB0F00597211 /* PelisApp */ = {
+			isa = PBXGroup;
+			children = (
+				964888B3287FDB0F00597211 /* AppDelegate.swift */,
+				964888B5287FDB0F00597211 /* SceneDelegate.swift */,
+				964888C7287FDBF000597211 /* Home */,
+				964888C8287FDBFC00597211 /* DetailView */,
+				961A51E92881344300B3CE16 /* Source */,
+				964888D5288125EE00597211 /* Resources */,
+				964888BC287FDB1200597211 /* Assets.xcassets */,
+				964888BE287FDB1200597211 /* LaunchScreen.storyboard */,
+				964888C1287FDB1200597211 /* Info.plist */,
+			);
+			path = PelisApp;
+			sourceTree = "<group>";
+		};
+		964888C7287FDBF000597211 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				964888D2287FE1BD00597211 /* Model */,
+				964888CD287FDDDF00597211 /* View */,
+				964888D1287FE19400597211 /* ViewModel */,
+				964888CE287FDDFF00597211 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		964888C8287FDBFC00597211 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				961A52002884FFA800B3CE16 /* Model */,
+				961A51FD2884FDF300B3CE16 /* Router */,
+				961A51F92884FBAC00B3CE16 /* View */,
+				961A51FA2884FBD900B3CE16 /* ViewModel */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		964888CD287FDDDF00597211 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				964888C9287FDD6000597211 /* HomeViewController.swift */,
+				964888CA287FDD6000597211 /* HomeViewController.xib */,
+				961A51EE2881592600B3CE16 /* movieCell.swift */,
+				961A51EF2881592600B3CE16 /* movieCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		964888CE287FDDFF00597211 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				964888CF287FDE3300597211 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		964888D1287FE19400597211 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				964888D3287FE21A00597211 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		964888D2287FE1BD00597211 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				961A51EC288135AF00B3CE16 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		964888D5288125EE00597211 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				961A51F2288161D200B3CE16 /* Extenciones */,
+				964888D62881277D00597211 /* Constans.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		964888AF287FDB0F00597211 /* PelisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964888C4287FDB1200597211 /* Build configuration list for PBXNativeTarget "PelisApp" */;
+			buildPhases = (
+				08E67ECF5A99CEA411B23FC9 /* [CP] Check Pods Manifest.lock */,
+				964888AC287FDB0F00597211 /* Sources */,
+				964888AD287FDB0F00597211 /* Frameworks */,
+				964888AE287FDB0F00597211 /* Resources */,
+				1F88053C790F8DEEC4A4D79A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PelisApp;
+			productName = PelisApp;
+			productReference = 964888B0287FDB0F00597211 /* PelisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		964888A8287FDB0F00597211 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					964888AF287FDB0F00597211 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 964888AB287FDB0F00597211 /* Build configuration list for PBXProject "PelisApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 964888A7287FDB0F00597211;
+			productRefGroup = 964888B1287FDB0F00597211 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				964888AF287FDB0F00597211 /* PelisApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		964888AE287FDB0F00597211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964888C0287FDB1200597211 /* LaunchScreen.storyboard in Resources */,
+				964888BD287FDB1200597211 /* Assets.xcassets in Resources */,
+				961A51F12881592600B3CE16 /* movieCell.xib in Resources */,
+				961A51F82884F36200B3CE16 /* DitailViewController.xib in Resources */,
+				964888CC287FDD6000597211 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08E67ECF5A99CEA411B23FC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PelisApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F88053C790F8DEEC4A4D79A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PelisApp/Pods-PelisApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PelisApp/Pods-PelisApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PelisApp/Pods-PelisApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		964888AC287FDB0F00597211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961A51F72884F36200B3CE16 /* DitailViewController.swift in Sources */,
+				961A52032884FFC100B3CE16 /* MovieDetail.swift in Sources */,
+				964888B4287FDB0F00597211 /* AppDelegate.swift in Sources */,
+				964888D0287FDE3300597211 /* HomeRouter.swift in Sources */,
+				961A51FF2884FE2E00B3CE16 /* DetailRouter.swift in Sources */,
+				961A51ED288135AF00B3CE16 /* Movies.swift in Sources */,
+				961A51F02881592600B3CE16 /* movieCell.swift in Sources */,
+				961A51EB2881347400B3CE16 /* ManagerConections.swift in Sources */,
+				961A51F42881620400B3CE16 /* Extension.swift in Sources */,
+				961A51FC2884FBF600B3CE16 /* DetailViewModel.swift in Sources */,
+				964888D72881277D00597211 /* Constans.swift in Sources */,
+				964888B6287FDB0F00597211 /* SceneDelegate.swift in Sources */,
+				964888D4287FE21A00597211 /* HomeViewModel.swift in Sources */,
+				964888CB287FDD6000597211 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		964888BE287FDB1200597211 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964888BF287FDB1200597211 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		964888C2287FDB1200597211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		964888C3287FDB1200597211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		964888C5287FDB1200597211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3DEDB29AB55EA7176FF0E48 /* Pods-PelisApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NRZ7G97BW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PelisApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.squirrelweb.PelisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		964888C6287FDB1200597211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D020A6B05927D0556747CF5F /* Pods-PelisApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NRZ7G97BW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PelisApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.squirrelweb.PelisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		964888AB287FDB0F00597211 /* Build configuration list for PBXProject "PelisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964888C2287FDB1200597211 /* Debug */,
+				964888C3287FDB1200597211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964888C4287FDB1200597211 /* Build configuration list for PBXNativeTarget "PelisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964888C5287FDB1200597211 /* Debug */,
+				964888C6287FDB1200597211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 964888A8287FDB0F00597211 /* Project object */;
+}
